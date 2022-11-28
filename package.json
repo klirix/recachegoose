@@ -10,8 +10,7 @@
   "dependencies": {
     "recacheman": "^2.2.4",
     "recacheman-file": "^0.2.5",
-    "recacheman-redis": "^2.1.5",
-    "sha1": "^1.1.1"
+    "recacheman-redis": "^2.1.5"
   },
   "peerDependencies": {
     "mongoose": "^5.0.1 || ^6.0.0"

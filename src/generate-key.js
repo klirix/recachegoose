@@ -1,6 +1,6 @@
 'use strict';
 
-const sha1 = require('sha1');
+const { createHash } = require('crypto');
 
 function jsosort(obj, sortfunction) {
   const result = {};
@@ -22,5 +22,5 @@ module.exports = function init(obj) {
     return val instanceof RegExp ? String(val) : val;
   });
 
-  return sha1(obj);
+  return createHash('sha1').update(obj).digest('hex');
 };
